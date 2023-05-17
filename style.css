@@ -28,6 +28,18 @@
     align-self: flex-end;
     padding-bottom: 50px;
 }
+.main h2 span {
+    display: inline-block;
+    width: 3vw;
+    height: 4vw;
+}
+.main span img {
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    transform: scale(1.2)
+}
+
 .main p {
     text-align: center;
 }
@@ -35,7 +47,7 @@
 .img-parralax {
     width: 100%;
     height: 400px;
-    background-image: url(pizza1.jpg);
+    background-image: url(ressources/pizza1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -61,12 +73,22 @@
 }
 .menu ul li {
     padding: 10px;
+    background: transparent;
+    cursor: pointer;
+}
+.menu ul li:hover h5{
+    text-decoration: underline;
 }
 
 .contact {
     margin: 50px;
     line-height: 3vw;
     text-align: center;
+}
+
+.contact img {
+    width: 40vw;
+    padding: 50px;
 }
 
 @media screen and (max-width: 1050px) {
@@ -106,7 +128,7 @@
     }
     .menu {
         padding: 10px ;
-        width: 90%;
+        width: 80%;
     }
 }
 @media screen and (min-width: 1852px){
