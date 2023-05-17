@@ -35,8 +35,8 @@
 }
 .main span img {
     background: transparent;
-    width: 100%;
-    height: 100%;
+    width: 3vw;
+    height: 4vw;
     transform: scale(1.2)
 }
 
@@ -47,7 +47,7 @@
 .img-parralax {
     width: 100%;
     height: 400px;
-    background-image: url(pizza1.jpg);
+    background-image: url(ressources/pizza1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -76,26 +76,47 @@
     background: transparent;
     cursor: pointer;
 }
-.menu ul li:hover h5{
+.menu ul li:hover h3{
     text-decoration: underline;
 }
 
 .contact {
     margin: 50px;
-    line-height: 3vw;
     text-align: center;
+    line-height: 3vw;
 }
 
-.contact img {
+.contact #golfy-brand {
     width: 40vw;
     padding: 50px;
 }
+h5 {
+    font-size: 1.5vw;
+}
+.reseaux {
+    background-color: #fefefe;
+    width: 100%;
+    height: auto;
+}
+.reseaux h5 {
+    background-color: #fefefe;
+    color: #272626;
+}
+.reseaux a {
+    cursor: pointer;
+    background-color: #fefefe;
+}
+.reseaux a img {
+    width: 2vw;
+    background-color: #fefefe;
+}
+
 
 @media screen and (max-width: 1050px) {
     .main {
         height: 40vw;
     }
-    h5, p{
+    h3, p{
         font-size: 2vw;
     }
 }
@@ -110,17 +131,17 @@
 }
 
 @media screen and (max-width: 425px){
-    h1 {
-        font-size: 7vw;
+    .main h1 {
+        font-size: 6vw;
     }
-    h2 {
+    .main h2 {
         font-size: 5vw;
     }
-    h5, p{
+    h3, p, h5{
         font-size: 3vw;
     }
     .main {
-        height: 50vw;
+        height: 60vw;
     }
     .img-parralax {
         height: 200px;
@@ -129,6 +150,9 @@
     .menu {
         padding: 10px ;
         width: 80%;
+    }
+    .reseaux a img{
+        width: 3vw;
     }
 }
 @media screen and (min-width: 1852px){
